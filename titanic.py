@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 # Load the passenger data
 passengers = pd.read_csv('passengers.csv')
 
-# Update sex column to numerical
+# Update gender column to numerical
 passengers['Sex'] = passengers['Sex'].map({'male': 0, 'female': 1})
 
 # Fill the nan values in the age column
